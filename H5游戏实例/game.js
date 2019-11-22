@@ -122,7 +122,7 @@ var update = function (modifier) {
 	if (37 in keysDown && hero.x >= 20) { // Player holding left
 		hero.x -= hero.speed * modifier;
 	}
-	if (39 in keysDown && hero.x <= 540) { // Player holding right
+	if (39 in keysDown && hero.x <= 480) { // Player holding right
 		hero.x += hero.speed * modifier;
 	}
 
@@ -148,8 +148,8 @@ var update = function (modifier) {
 			}
 
 		} else {
-			monster.x = 32 + (Math.random() * (canvas.width - 64));
-			monster.y = 32 + (Math.random() * (canvas.height - 64));
+			monster.x = 32 + (Math.random() * (canvas.width - 80));
+			monster.y = 32 + (Math.random() * (canvas.height - 80));
 		}
 
 	}
@@ -178,8 +178,8 @@ var update = function (modifier) {
 		}
 		else
 		{
-			monster2.x = 32 + (Math.random() * (canvas.width - 64));
-		monster2.y = 32 + (Math.random() * (canvas.height - 64));
+			monster2.x = 32 + (Math.random() * (canvas.width - 80));
+		monster2.y = 32 + (Math.random() * (canvas.height - 80));
 	}
 		
 	}
